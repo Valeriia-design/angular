@@ -5,18 +5,15 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './list.component.html',
   styleUrls: ['./list.component.css']
 })
-export class ListComponent implements OnInit {
+export class ListComponent{
 
-  constructor() { }
-  napisy: string[] = ['tsest','test']
-  nowyNapis: string = ''
+  
+  napisy: string[] = ['dk','lah'];
+  nowyNapis: string = '';
    
   addToList(){
     this.napisy.push(this.nowyNapis);
     this.nowyNapis = '';
-  }
-
-  ngOnInit() {
   }
 
 }

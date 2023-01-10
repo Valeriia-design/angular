@@ -1,3 +1,8 @@
 <p>
 list works!
 </p>
+<input type="text" [(ngModel)]="nowyNapis"/>
+<button (click)="addToList()">add</button>
+<ul>
+  <li *ngFor="let napis of napisy">{{napis}}</li>
+</ul>
